@@ -28,6 +28,7 @@ button {
 
 button:hover,
 button:focus {
-  box-shadow: white 0px -3rem 0px inset;
+  /* box-shadow: white 0px -3rem 0px inset; */
+  box-shadow: rgba(255, 255, 255, 0.5) 0px -4rem 0px inset;
 }
 </style>

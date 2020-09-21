@@ -2,17 +2,24 @@
   <button @click="grabAffirmation">
     {{ message }}
   </button>
+
+  <div v-if="affirmation !== null">
+    <Modal :message="affirmation" @close-modal="closeAffirmation" />
+  </div>
 </template>
 
 <script>
 import { prompts } from "../assets/prompts.js";
 import { affirmations } from "../assets/affirmations.js";
+import Modal from "./Modal.vue";
 
 export default {
   name: "Button",
+  components: { Modal },
   data() {
     return {
       message: prompts[Math.round(Math.random() * (prompts.length - 1))],
+      affirmation: null,
     };
   },
   props: {
@@ -25,18 +32,20 @@ export default {
         const category =
           affirmations[Math.round(Math.random() * (categoriesLen - 1))];
         const len = category.list.length;
-        console.log(category.list[Math.round(Math.random() * (len - 1))]);
+        this.affirmation = category.list[Math.round(Math.random() * (len - 1))];
       } else {
         for (let i = 0; i < affirmations.length; i++) {
           if (affirmations[i].category === this.selected) {
             const len = affirmations[i].list.length;
-            console.log(
-              affirmations[i].list[Math.round(Math.random() * (len - 1))]
-            );
+            this.affirmation =
+              affirmations[i].list[Math.round(Math.random() * (len - 1))];
             return;
           }
         }
       }
+    },
+    closeAffirmation() {
+      this.affirmation = null;
     },
   },
 };
