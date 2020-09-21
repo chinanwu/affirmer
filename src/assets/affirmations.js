@@ -2,7 +2,6 @@ const affirmations = [{
         category: "Work",
         list: [
             "I further my career with every action I take.",
-            "I have my dream job.",
             "I love every day that I work.",
             'My career brings me closer to my family.',
             'My job brings me financial abundance.',
@@ -46,7 +45,7 @@ const affirmations = [{
             "Everything about me is lovable and worthy of love.",
             "I am with my soulmate because I am a loving, kind person who deserves true love.",
             "I wake up every morning filled with joy, because I know that I face each day with the support and love of my partner.",
-            "My partner finds my sexy because(he / she) is attracted to every part of me.",
+            "My partner finds me sexy because they are attracted to every part of me.",
             "All of my relationships are healthy because they are based in love and compassion.",
             "I radiate beauty, charm, and grace.",
         ]
@@ -140,4 +139,5 @@ module.exports = {
 // https://blog.mindvalley.com/positive-affirmations/
 // https://www.huffpost.com/entry/affirmations_b_3527028
 
+// https://www.developgoodhabits.com/positive-affirmations/
 // Maybe additional category: Mind
