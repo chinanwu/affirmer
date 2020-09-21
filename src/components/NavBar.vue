@@ -18,11 +18,9 @@ div {
 
 button {
   background-color: inherit;
-  border: none;
   padding: 1rem;
   margin-right: 1rem;
   font-size: 1.8rem;
-  cursor: pointer;
   box-shadow: rgba(255, 255, 255, 0.3) 0px -0.5rem 0px inset;
   transition: box-shadow 0.2s;
   letter-spacing: 0.3rem;

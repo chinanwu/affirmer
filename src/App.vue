@@ -1,7 +1,7 @@
 <template>
   <NavBar />
-  <Dropdown />
-  <Button />
+  <Dropdown @on-selected-change="setSelected" />
+  <Button :selected="selected" />
 </template>
 
 <script>
@@ -15,6 +15,16 @@ export default {
     Button,
     NavBar,
     Dropdown,
+  },
+  data() {
+    return {
+      selected: "Anything",
+    };
+  },
+  methods: {
+    setSelected(newSelected) {
+      this.selected = newSelected;
+    },
   },
 };
 </script>
@@ -62,6 +72,13 @@ h4 {
 p {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: white;
 }
 
 #app {
