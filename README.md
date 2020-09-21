@@ -19,4 +19,6 @@ This is my first(-ish) Vue project so I expect this code to be messy, so if you 
 
 Please [create an issue](https://github.com/chinanwu/affirmer/issues)! Just state what you'd like to add or edit and I can add it to the list of affirmations. If you prefer to do it yourself, fork this repo, edit the affirmations.js file, and [make a merge request](https://github.com/chinanwu/affirmer/pulls)!
 
-Thanks so much!
+## Thanks so much!
+
+If there is anything you need help with or information on, please feel free to reach out! I will help in any way I can.
