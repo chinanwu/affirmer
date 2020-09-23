@@ -1,38 +1,11 @@
 <template>
-  <NavBar />
-  <Dropdown @on-selected-change="setSelected" />
-  <Button :selected="selected" />
+  <router-view />
 </template>
 
-<script>
-import Button from "./components/Button.vue";
-import NavBar from "./components/NavBar.vue";
-import Dropdown from "./components/Dropdown.vue";
-
-export default {
-  name: "App",
-  components: {
-    Button,
-    NavBar,
-    Dropdown,
-  },
-  data() {
-    return {
-      selected: "Anything",
-    };
-  },
-  methods: {
-    setSelected(newSelected) {
-      this.selected = newSelected;
-    },
-  },
-};
-</script>
-
-<style>
+<style lang="less">
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -74,25 +47,10 @@ p {
   padding-right: 1rem;
 }
 
-button {
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
-  border: none;
-  background-color: white;
-}
-
 #app {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(232, 226, 48);
-  background: radial-gradient(
-    circle,
-    rgba(232, 226, 48, 1) 0%,
-    rgba(232, 193, 48, 1) 100%
-  );
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
 }
 </style>
