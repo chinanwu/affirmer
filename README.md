@@ -2,6 +2,8 @@
 
 Words of Affirmation are incredibly powerful. I wanted to make this web app to make it easier for folks who might not know how to affirm themselves or need someone else to help them.
 
+![Screenshot](screenshot.png "A screenshot of the home screen")
+
 ## To Run This Locally
 
 - `git clone` this repo into wherever you'd like to have this code
