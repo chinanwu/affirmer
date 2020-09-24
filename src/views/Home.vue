@@ -6,23 +6,23 @@
 
         <div class="Home__btns">
           <Button
-            label="Life"
-            colourClass="Button__life"
+            label="Self"
+            colourClass="Button__one"
             @on-click="handleClick"
           />
           <Button
             label="Work"
-            colourClass="Button__work"
+            colourClass="Button__two"
             @on-click="handleClick"
           />
           <Button
-            label="Body"
-            colourClass="Button__body"
+            label="Future"
+            colourClass="Button__three"
             @on-click="handleClick"
           />
           <Button
             label="Love"
-            colourClass="Button__love"
+            colourClass="Button__four"
             @on-click="handleClick"
           />
         </div>

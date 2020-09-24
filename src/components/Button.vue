@@ -37,7 +37,7 @@ button {
   }
 }
 
-.Button__life {
+.Button__one {
   background: rgb(245, 201, 149);
   background: linear-gradient(
     146deg,
@@ -55,7 +55,7 @@ button {
   }
 }
 
-.Button__work {
+.Button__two {
   background: rgb(245, 236, 149);
   background: linear-gradient(
     146deg,
@@ -73,7 +73,7 @@ button {
   }
 }
 
-.Button__body {
+.Button__three {
   background: rgb(149, 228, 245);
   background: linear-gradient(
     146deg,
@@ -91,7 +91,7 @@ button {
   }
 }
 
-.Button__love {
+.Button__four {
   background: rgb(232, 149, 245);
   background: linear-gradient(
     146deg,

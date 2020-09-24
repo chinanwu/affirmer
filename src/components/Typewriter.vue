@@ -1,7 +1,11 @@
 <template>
   <div class="Typewriter">
-    <span class="Typewriter__message">{{ typed }}</span>
+    <span class="Typewriter__message" aria-describedby="typewriterMessage">{{
+      typed
+    }}</span>
     <span class="Typewriter__cursor">|</span>
+
+    <span id="typewriterMessage" class="Typewriter__full">{{ message }}</span>
   </div>
 </template>
 
@@ -44,6 +48,10 @@ export default {
 
 .Typewriter__cursor {
   animation: blink 0.8s infinite;
+}
+
+.Typewriter__full {
+  visibility: hidden;
 }
 
 @keyframes blink {
