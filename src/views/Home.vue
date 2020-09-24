@@ -182,6 +182,31 @@ export default {
     background-color: rgba(233, 233, 231, 0.4);
   }
 }
+
+@media only screen and (max-width: 623px) {
+  .Home__btns {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .Home__btns {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .Home__btns {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 255px) {
+  .Home__about {
+    position: initial;
+    margin-bottom: 1rem;
+  }
+}
 </style>
 
 <!-- 
